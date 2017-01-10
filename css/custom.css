@@ -238,12 +238,3 @@ ul.alert-dropdown {
 	width:1px;
     word-wrap: break-word;
 }
-
-td {
-    text-align: center; /* center checkbox horizontally */
-    vertical-align: middle; /* center checkbox vertically */
-}
-thead {
-    text-align: center; /* center checkbox horizontally */
-    vertical-align: middle; /* center checkbox vertically */
-}
