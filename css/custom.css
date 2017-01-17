@@ -1,5 +1,6 @@
 .floatRight {
    float: right;
+   padding: 20px;
 }
 .navbar-inverseCustom {
 	background-color: #eed;
@@ -237,4 +238,21 @@ ul.alert-dropdown {
 .verticalText {
 	width:1px;
     word-wrap: break-word;
+}
+
+.paddingLeft {
+	padding-left: 0px;
+}
+
+.table-responsive {
+    max-height:300px;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+th {
+  text-align: center;
+  vertical-align: middle;
 }
