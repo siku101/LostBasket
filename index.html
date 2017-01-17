@@ -104,7 +104,7 @@
 				<ul class="nav navbar-nav side-nav">
 					<li><a href="index.html"><i class="fa fa-fw fa-dashboard"></i>
 							Simulation</a></li>
-					<li><a href="index.html"><i
+					<li><a href="optimizer.html"><i
 							class="fa fa-fw fa-bar-chart-o"></i> Optimizer</a></li>
 				</ul>
 			</div>
@@ -117,7 +117,7 @@
 
 				<!-- Page Heading -->
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-12 paddingLeft">
 						<h1 class="page-header">Lost basket Optimizer</h1>
 					</div>
 				</div>
@@ -204,7 +204,8 @@
 										<td>{{input.segment}}</td>
 										<td>{{input.nationalDistribution}}</td>
 										<td>{{input.retailChainA}}</td>
-										<td><input type="checkbox" align="center"></input></td>
+										<td><input type="checkbox" ng-model ="selectedData"
+										ng-checked = "exist(input)" ng-click="select(input)"></input></td>
 									</tr>
 								</tbody>
 							</table>
@@ -212,6 +213,35 @@
 					</div>
 					<div id="menu1" class="tab-pane fade col-lg-12">
 					<h1> CHART Yet to be done!!!!</h1>
+					<div class="table-responsive">
+							<table class="table table-bordered table-hover table-striped">
+								<thead>
+									<tr>
+										<th>Flavour</th>
+										<th>Pack Content</th>
+										<th>User</th>
+										<th>Variant</th>
+										<th>Brand</th>
+										<th>Segement</th>
+										<th>National Distribution</th>
+										<th>Retail Chain A</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr
+										ng-repeat="input in selected">
+										<td>{{input.flavour}}</td>
+										<td>{{input.packContent}}</td>
+										<td>{{input.user}}</td>
+										<td>{{input.variant}}</td>
+										<td>{{input.brand}}</td>
+										<td>{{input.segment}}</td>
+										<td>{{input.nationalDistribution}}</td>
+										<td>{{input.retailChainA}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 
